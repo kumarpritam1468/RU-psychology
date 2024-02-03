@@ -1,0 +1,119 @@
+.homePage{
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    padding: 1rem 3rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right img {
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.4));
+    width: 33rem;
+    margin-bottom: 3rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Homepage Middle Section */
+
+
+.homeMid{
+    width: 100vw;
+    height: 100vh;
+}
+
+.homeMid h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 1040px) {
+    html{
+        font-size: 85%;
+    }
+
+    .right img{
+        width: 28rem;
+    }
+
+    .pages{
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 960px){
+    html{
+        font-size: 110%;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .right img{
+        width: 40rem;
+    }
+
+    .left{
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html{
+        font-size: 70%;
+    }
+
+    .right img{
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    html{
+        font-size: 80%;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .left{
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:350px) {
+    html{
+        font-size: 60%;
+    }
+
+    .pages{
+        width: 200px;
+    }
+}
