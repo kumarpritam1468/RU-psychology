@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import heroRight from '../../assets/hero-right.png';
+import boxImg from '../../assets/box-img.jpg';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
@@ -33,24 +34,33 @@ const Hero = () => {
 
         <div className="serviceBoxes">
           <div className="box">
-            <i className='bx bx-x'></i>
-            <h1>Emergency Consult</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur suscipit culpa, esse eos nesciunt officia delectus. Itaque?</p>
+            <h2><span className="colorText">Emergency</span> Consult</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur </p>
+            <div className="boxImg">
+              <img src={boxImg} alt="" />
+            </div>
             <div className="btn">Contact Now</div>
+
           </div>
 
           <div className="box">
-            <i className='bx bx-x'></i>
-            <h1>Emergency Consult</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur suscipit culpa, esse eos nesciunt officia delectus. Itaque?</p>
-            <div className="btn">Contact Now</div>
+            <h2><span className="colorText">Psychiatrist</span> Consult</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur </p>
+            <div className="boxImg">
+              <img src={boxImg} alt="" />
+            </div>
+            <div className="btn">Consult Now</div>
+
           </div>
 
           <div className="box">
-            <i className='bx bx-x'></i>
-            <h1>Emergency Consult</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur suscipit culpa, esse eos nesciunt officia delectus. Itaque?</p>
-            <div className="btn">Contact Now</div>
+            <h2>Consult <span className="colorText">Recommendation</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores consequuntur </p>
+            <div className="boxImg">
+              <img src={boxImg} alt="" />
+            </div>
+            <div className="btn">Consult Now</div>
+
           </div>
         </div>
       </div>
