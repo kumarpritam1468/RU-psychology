@@ -85,10 +85,11 @@
 .boxImg img {
     transition: all .3s ease-in-out;
     width: 100%;
+    scale: 1.1;
 }
 
 .boxImg:hover img {
-    scale: 1.1;
+    scale: 1.2;
 }
 
 @media screen and (max-width: 1040px) {

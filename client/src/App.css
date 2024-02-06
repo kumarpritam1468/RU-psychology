@@ -24,27 +24,61 @@ a {
     font-weight: 600;
 }
 
+.icn {
+    background: black;
+    padding: .2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    background-size: 200% auto;
+    transition: all .4s ease-in-out;
+    font-size: 140%;
+    transform: translateX(-7rem);
+}
+
+.btn:hover .icn{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transform: translateX(2rem);
+}
+
+.btn a {
+    color: white;
+    transform: translateX(-1rem);
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover a{
+    transform: translateX(7rem);
+}
+
+
 .btn {
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
     padding: .5rem .4rem;
     font-weight: 600;
     text-align: center;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 15px #00000065;
     border-radius: 2rem;
-    display: block;
     width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.btn:hover {
+
+.btn:hover{
     background-position: right center;
     cursor: pointer;
-    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-    scale: 1.05;
 }
 
 .paddings {

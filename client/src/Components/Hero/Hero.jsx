@@ -3,6 +3,9 @@ import Navbar from '../Navbar/Navbar';
 import heroRight from '../../assets/hero-right.png';
 import boxImg from '../../assets/box-img.jpg';
 import { Link } from 'react-router-dom';
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
+import { MdPermPhoneMsg } from "react-icons/md";
 import './Hero.css';
 
 const Hero = () => {
@@ -17,8 +20,14 @@ const Hero = () => {
             <h1>Consult a <span className="colorText">Psychiatrist</span></h1>
             <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate soluta consequatur sint corporis eos dolorem fugit aut ipsa quam neque.</h3>
             <div className="buttons">
-              <Link to='/register' className='btn'>Register</Link>
-              <Link to='/consult' className='btn'>Consult Now</Link>
+              <Link className="btn" to='/register'>
+                <div className="icn"> <MdKeyboardDoubleArrowRight/> </div>
+                <a >Register</a>
+              </Link>
+              <Link className="btn" to='/consult'>
+                <div className="icn"> < MdArrowOutward /> </div>
+                <a>Consult</a>
+              </Link>
             </div>
           </div>
 
@@ -39,7 +48,10 @@ const Hero = () => {
             <div className="boxImg">
               <img src={boxImg} alt="" />
             </div>
-            <div className="btn">Contact Now</div>
+            <Link className="btn" to='/contact'>
+              <div className="icn"> <MdPermPhoneMsg/> </div>
+              <a>Contact</a>
+            </Link>
 
           </div>
 
@@ -49,7 +61,10 @@ const Hero = () => {
             <div className="boxImg">
               <img src={boxImg} alt="" />
             </div>
-            <div className="btn">Consult Now</div>
+            <Link className="btn" to='/consult'>
+              <div className="icn"> <MdArrowOutward/> </div>
+              <a>Consult</a>
+            </Link>
 
           </div>
 
@@ -59,7 +74,10 @@ const Hero = () => {
             <div className="boxImg">
               <img src={boxImg} alt="" />
             </div>
-            <div className="btn">Consult Now</div>
+            <Link className="btn" to='/consult'>
+              <div className="icn"> <MdArrowOutward/> </div>
+              <a>Consult</a>
+            </Link>
 
           </div>
         </div>

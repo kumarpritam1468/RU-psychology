@@ -1,0 +1,21 @@
+.profile{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileCard{
+    width: 80vw;
+    height: 70vh;
+    background: rgba(240, 240, 240, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+}
+
+.profileName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
