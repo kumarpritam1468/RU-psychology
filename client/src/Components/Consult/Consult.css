@@ -1,0 +1,37 @@
+.consult{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: fit-content;
+}
+
+.consultSection{
+    overflow-x: hidden;
+}
+
+.consultBox{
+    /* width: 28vw; */
+    gap: .3rem;
+}
+
+.consultBoxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 65vh;
+}
+
+@media screen and (max-width: 1040px) {
+    .consultBoxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .consultBoxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

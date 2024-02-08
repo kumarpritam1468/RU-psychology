@@ -8,6 +8,7 @@ import {
 import Register from './Components/Register/Register';
 import Contact from './Components/Contact/Contact';
 import Profile from './Components/Profile/Profile';
+import Consult from './Components/Consult/Consult';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
 
         <Route exact path='/' element={<Hero/>}/>
+        <Route exact path='/consult' element={<Consult/>}/>
         <Route exact path='/profile' element={<Profile/>}/>
         <Route exact path='/register' element={<Register/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
