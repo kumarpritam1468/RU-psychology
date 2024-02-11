@@ -1,3 +1,48 @@
+/* Pre register role page */
+
+.role{
+    height: 90vh;
+    padding: 3rem 5rem;
+}
+
+.roleBoxes{
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .roleBoxes>:nth-child(2) .boxImg{
+    height: 70%;
+} */
+
+.roleBox{
+    /* height: 90%; */
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .roleBox{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 960px) {
+    html{
+        font-size: 80%
+    }
+    .roleBoxes{
+        scale: 1.6;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .roleBox{
+        width: 80vw;
+    }
+}
+
+/* Register Form */
+
 .sign-in-page {
     height: 90vh;
     font-family: 'Poppins', sans-serif;
@@ -25,7 +70,7 @@
     background-color: #fff;
     border-radius: 2rem;
     box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 0.2);
-    scale: .55;
+    scale: .75;
 }
 
 .container::before {
@@ -133,6 +178,10 @@
 }
 
 @media screen and (min-width: 43.75em) {
+    .container{
+        scale: .55;
+    }
+
     .container::before {
         height: 30rem;
     }

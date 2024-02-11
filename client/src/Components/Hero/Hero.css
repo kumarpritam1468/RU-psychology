@@ -88,7 +88,7 @@
     scale: 1.1;
 }
 
-.boxImg:hover img {
+.box:hover img {
     scale: 1.2;
 }
 
